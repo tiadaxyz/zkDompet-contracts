@@ -34,8 +34,12 @@ yarn hardhat run scripts/deploy-multisigWithVerifier.js --network mumbai
 MinimalForwarder: 0x9B6CB4DD4836b2AB59fe84938f062e4504c90F83
 MultiSigWalletMetaTxnWithVerifier: 0x93f80F3b22907d01098B2Ac0311A35d4FDD46736
 
+### new new 
+# sha256 of 0x264dABD1fbF0da59Cb22E0B4b6146aA26dA669BF
+36081fc7cc32451b2ac9667bfb9815f61e5d8ac07c88db19c913742820939495
 
-
+MinimalForwarder: 0xC32D8793ef43238878171fa83e1A975b1ffb5173
+MultiSigWalletMetaTxnWithVerifierNew: 0xFeF4977cB4620714D45e00f759CE82FE0A28e378
 
 ## Structure
 
