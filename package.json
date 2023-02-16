@@ -9,6 +9,7 @@
     "local:sign": "hardhat run scripts/sign.js --network local",
     "deploy": "hardhat run scripts/deploy.js --network mumbai",
     "deploy-multisig": "hardhat run scripts/deploy-multisig.js --network mumbai",
+    "deploy-multisigWithVerifier": "hardhat run scripts/deploy-multisigWithVerifier.js --network mumbai",
     "sign": "hardhat run scripts/sign.js --network mumbai",
     "events": "hardhat run scripts/events.js --network mumbai",
     "verify": "hardhat run scripts/verify.js --network mumbai",

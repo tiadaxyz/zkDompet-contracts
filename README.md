@@ -1,5 +1,8 @@
 # zkDompet-Contracts
 - Uses sample code from OpenZeppelin Defender workshop
+# Deployment notes
+- only need to deploy `Verifier` contract from generated `verifier.sol`
+- use `snarkjs generatecall` in the circom root folder to generate call data that returns `true` when submitted to the `Verifier` contract
 # Defender Meta-Transactions Workshop
 
 Code for the workshop on Meta-Transactions using [OpenZeppelin Defender](https://openzeppelin.com/defender).
@@ -7,6 +10,32 @@ Code for the workshop on Meta-Transactions using [OpenZeppelin Defender](https:/
 This project consists of a sample _names registry_ contract, that accepts registrations for names either directly or via a meta-transaction, along with a client dapp, plus the meta-transaction relayer implementation.
 
 Live demo running at [defender-metatx-workshop-demo.openzeppelin.com](https://defender-metatx-workshop-demo.openzeppelin.com/).
+
+## test 
+
+curl \
+  -X GET \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H "X-Api-Key: AM8iFEdNdPftCCWUwcKgQDwEPzbq65Yu" \
+  -H "Authorization: Bearer 5dZKF4qtTDAjJVe7KZsfSiYNko1K7MGmgxmUp21p2CrzxgvRMKC5sPrfoF4e1m9b" \
+    "https://defender-api.openzeppelin.com/relayer/relayers/summary"
+
+### deploy contract 
+0x446008101d998584837e01c3bbc0d3055e37b189 ## relayer ? 
+### submit transaction
+0xBb0582EaD520EDE2996D62A5e44A3d86e056991B,100000000000000,0x00
+
+## deploy
+```bash
+yarn hardhat run scripts/deploy-multisigWithVerifier.js --network mumbai
+```
+### test this now 
+MinimalForwarder: 0x9B6CB4DD4836b2AB59fe84938f062e4504c90F83
+MultiSigWalletMetaTxnWithVerifier: 0x93f80F3b22907d01098B2Ac0311A35d4FDD46736
+
+
+
 
 ## Structure
 
